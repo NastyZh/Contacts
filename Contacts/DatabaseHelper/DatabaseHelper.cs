@@ -51,18 +51,18 @@ namespace Сontacts.Data
                   ('Мясникова', '1'), 
                   ('Грибоедова', '2'), 
                   ('Алишерова', '3')");
-
+//
           _connection.Execute(@"
               INSERT INTO PhoneNumber (Number, Type) VALUES 
-                  ('123456789', 'Mobile'), 
-                  ('987654321', 'Home'),
-                  ('3453564345', 'Work')");
-
+                  ('37754457', 'Mobile'), 
+                  ('44493382', 'Home'),
+                  ('22849939', 'Work')");
+//
           _connection.Execute(@"
               INSERT INTO Abonent (FullName, StreetId, PhoneNumberId) VALUES 
-                  ('Иванов Иван Иванович', 1, 1),
-                  ('Петров Петр Петрович', 2, 2),
-                  ('Сидоров Сидор Сидорович', 3, 3)");
+                  ('Александров Иван Петрович', 1, 1),
+                  ('Петров Петр Алексеевич', 2, 2),
+                  ('Андреев Сидор Сидорович', 3, 3)");
         }
 
         public List<Abonent> GetAbonents()
