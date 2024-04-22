@@ -1,0 +1,14 @@
+<Window x:Class="Сontacts.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Сontacts"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Введите ID абонента" Margin="10" FontSize="16"/>
+        <TextBox x:Name="txtId" Width="500" Height="20"  Margin="-290,-300,0,0" VerticalAlignment="Center"/>
+        <Button Content="Получить информацию" Width="150" Height="20"  Margin="350,-300,0,0" Click="GetAbonentClick" />
+    </Grid>
+</Window>
